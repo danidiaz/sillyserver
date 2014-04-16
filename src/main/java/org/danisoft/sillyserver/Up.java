@@ -15,7 +15,7 @@ public class Up
         try {
                 final ServerSocket serverSocket = new ServerSocket(1234);
 
-                System.out.println("Servert started with arguments:");
+                System.out.println("Server started with arguments:");
                 
                 for (String msg : ManagementFactory.getRuntimeMXBean().getInputArguments()) {
                     System.out.println(msg);
@@ -23,7 +23,7 @@ public class Up
 
                 Socket  clientSocket = serverSocket.accept();
                  
-                System.out.println("Server succesfully stopped.");
+                System.out.println("Server successfully stopped.");
                 
         } catch (Exception e) {
             e.printStackTrace();
